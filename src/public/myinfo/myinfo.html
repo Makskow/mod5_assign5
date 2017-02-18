@@ -1,0 +1,23 @@
+<div id="user-info">
+	<div ng-if="infoCtrl.user === ''">
+		<span>Not signed up yet</span>
+		<br>
+		<a ui-sref="public.signup">Sign up now!</a>
+	</div>
+
+	<div ng-if="infoCtrl.user !== ''" class="info">
+		<h2>User Information</h2> <br>
+
+		<span>{{ infoCtrl.user.firstName }} {{ infoCtrl.user.lastName }}</span> <br>
+		<span>{{ infoCtrl.user.email }}</span> <br>
+		<span>{{ infoCtrl.user.phone }}</span> <br> <br>
+
+		<div class="fav-dish">
+			<h4>Favorite Dish: </h4>
+			<img ng-src="{{infoCtrl.basePath}}/images/{{infoCtrl.favdish.short_name}}.jpg" alt="{{infoCtrl.favdish.name}}"> <br> <br>
+			<span>{{ infoCtrl.favdish.name }}, {{ infoCtrl.favdish.short_name }}</span> <br> <br>
+			<span>{{ infoCtrl.favdish.description }}</span>
+		</div>
+
+	</div>
+</div>

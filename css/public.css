@@ -113,6 +113,62 @@ h3.menu-item-title {
 }
 /* END SINGLE CATEGORY PAGE */
 
+/* SIGNUP PAGE */
+#signupForm {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 400px;
+}
+
+#signupForm input {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 5px;
+  color: black;
+}
+
+#signupForm span {
+
+}
+
+#signupForm button {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
+
+#signupForm .submit-result {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* END SIGNUP PAGE */
+
+/* USER INFO PAGE */
+#user-info {
+  width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#user-info .info {
+  width: 100%;
+  text-align: left;
+}
+
+#user-info .info h2 {
+  padding: 20px 5px;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+#user-info .info span {
+  marign-bottom: 20px;
+}
+/* END USER INFO PAGE */
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
